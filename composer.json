@@ -1,0 +1,14 @@
+{
+    "name": "rtgroup/payroll-api",
+    "autoload": {
+        "psr-4": {
+            "Rtgroup\\PayrollApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lionnel"
+        }
+    ],
+    "require": {}
+}
