@@ -10,6 +10,8 @@ class ComposerStaticInit66a3d3c6169916734bd663bf67714ce8
         'R' => 
         array (
             'Rtgroup\\PayrollApi\\' => 19,
+            'Rtgroup\\HttpRouter\\' => 19,
+            'Rtgroup\\Dbconnect\\' => 18,
         ),
     );
 
@@ -17,6 +19,24 @@ class ComposerStaticInit66a3d3c6169916734bd663bf67714ce8
         'Rtgroup\\PayrollApi\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Rtgroup\\HttpRouter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rtgroup/http-router/src',
+        ),
+        'Rtgroup\\Dbconnect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rtgroup/dbconnect/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'C' => 
+        array (
+            'Curl' => 
+            array (
+                0 => __DIR__ . '/..' . '/curl/curl/src',
+            ),
         ),
     );
 
@@ -29,6 +49,7 @@ class ComposerStaticInit66a3d3c6169916734bd663bf67714ce8
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit66a3d3c6169916734bd663bf67714ce8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit66a3d3c6169916734bd663bf67714ce8::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit66a3d3c6169916734bd663bf67714ce8::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit66a3d3c6169916734bd663bf67714ce8::$classMap;
 
         }, null, ClassLoader::class);

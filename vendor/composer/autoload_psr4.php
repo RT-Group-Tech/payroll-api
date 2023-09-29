@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Rtgroup\\PayrollApi\\' => array($baseDir . '/src'),
+    'Rtgroup\\HttpRouter\\' => array($vendorDir . '/rtgroup/http-router/src'),
+    'Rtgroup\\Dbconnect\\' => array($vendorDir . '/rtgroup/dbconnect/src'),
 );

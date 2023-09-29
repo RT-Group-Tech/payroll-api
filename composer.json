@@ -10,5 +10,8 @@
             "name": "lionnel"
         }
     ],
-    "require": {}
+    "require": {
+        "rtgroup/http-router": "dev-master",
+        "rtgroup/dbconnect": "dev-master"
+    }
 }
