@@ -18,8 +18,11 @@ class Api
 
     public function __construct()
     {
-        $dbConfig=new Dbconfig("localhost","root","","milleniumpayroll");
-        $this->dbconnect=new Dbconnect($dbConfig); 
+        /**
+         * Utiliser la db config global.
+         */
+        global $dbconnect;
+        $this->dbconnect=$dbconnect;
      //   $classtest= new tests();
 
     }
